@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,900&family=Work+Sans:wght@400;500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+body {
+  width: 85%;
+  margin: auto;
+}
+header {
+  background-color: aquamarine;
+  padding: 5px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo1 {
+  width: 80px;
+  margin-left: 15px;
+}
+ul li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+ul li a:hover {
+  color: white;
+  background-color: blue;
+  font-size: large;
+  border-radius: 5px;
+  padding: 5px;
+}
+header .icons {
+  margin-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  background-image: url(../images/image2.jpg);
+  height: 400px;
+  background-size: cover;
+}
+.hero h1 {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 50px;
+}
+.hero p {
+  font-style: italic;
+  font-weight: 500;
+}
+.container {
+  background: linear-gradient(35deg, rgb(130, 100, 158), lightgreen);
+}
+.container h1 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.container {
+  padding: 10px;
+}
+
+.box img {
+  width: 414px;
+  height: 400px;
+}
+img {
+  width: 100%;
+}
+.container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+}
+.container .box-container .box {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.container .box-container .box h3,
+p {
+  text-align: center;
+  margin: 5px 0;
+}
+.container .box-container .box .box-btn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+button {
+  display: block;
+  margin: auto;
+  background-color: grey;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+  letter-spacing: 1px;
+}
+.container .box-container .box:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+@media (min-width: 578px) {
+  header .icons {
+    display: none;
+  }
+}
+@media (max-width: 578px) {
+  nav ul {
+    display: none;
+  }
+}
+@media (min-width: 507px) {
+  .container .box-container .box img {
+    width: 100%;
+  }
+}
